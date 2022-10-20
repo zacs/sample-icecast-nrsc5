@@ -10,7 +10,6 @@ services:
       - ${PWD}/icecast.xml:/etc/icecast2/icecast.xml
     ports:
       - 8000:8000
-services:
   nrsc5:
     build: .
     container_name: nrsc5
