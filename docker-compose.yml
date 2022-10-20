@@ -10,11 +10,14 @@ services:
       - ${PWD}/icecast.xml:/etc/icecast2/icecast.xml
     ports:
       - 8000:8000
-  radio_noaa:
+services:
+  nrsc5:
     build: .
-    container_name: radio_noaa
-    depends_on: 
-      - icecast
+    container_name: nrsc5
     restart: always
     privileged: true
     network_mode: host
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"

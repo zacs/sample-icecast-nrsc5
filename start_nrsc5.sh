@@ -9,8 +9,9 @@ do
 	echo "-----------------------------"
 	lame --version
 	echo "-----------------------------"
-	rtl_fm -v
+	nrsc5 -v
 	echo "-----------------------------"
-	rtl_fm -f 162.55M -s 48000 -l 0 -d 0 -g 45 | lame -s 48000 --lowpass 3200 --abr 64 --scale 9 -r -m m - - | ezstream -c /etc/ezstream.xml -v
+	echo "nrsc5 -o - -l 3 90.3 -d 0 0 | lame -s 44.0 --noreplaygain --verbose -V 0 -m m - - | ezstream -c /etc/ezstream.xml -v"
+	nrsc5 -o - -l 3 90.3 -d 0 0 | lame -s 44.0 --noreplaygain --verbose -V 0 -m m - - | ezstream -c /etc/ezstream.xml -v
 	echo "------ Stream exited --------"
 done

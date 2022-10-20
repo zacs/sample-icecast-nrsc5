@@ -9,9 +9,9 @@
 
   <streams>
     <stream>
-      <mountpoint>/noaa</mountpoint>
+      <mountpoint>/your_radio_station_desired_endpoint</mountpoint>
       <format>MP3</format>
-      <stream_name>NOAA</stream_name>
+      <stream_name>KEXP_or_whatever_stations_name</stream_name>
     </stream>
   </streams>
 
