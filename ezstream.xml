@@ -12,6 +12,7 @@
       <mountpoint>/your_radio_station_desired_endpoint</mountpoint>
       <format>MP3</format>
       <stream_name>KEXP_or_whatever_stations_name</stream_name>
+      <stream_channels>2</stream_channels>
     </stream>
   </streams>
 
